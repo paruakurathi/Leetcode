@@ -1,0 +1,9 @@
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        for i in nums: 
+            if i == target: // Checks that i and target are same 
+                return nums.index(i) // return index of target 
+                break
+        else: // target is not present in given nums
+            return -1 // return -1 
+        
